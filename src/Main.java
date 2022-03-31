@@ -54,7 +54,7 @@ public class Main {
 		System.out.println("\n--- LESSON 25 (findNumber) ---");
 		subtract(12,79);
 		
-		System.out.println("\n--- LESSON 26 (findNumber) ---");
+		System.out.println("\n--- LESSON 26 (variableArguments) ---");
 		variableArguments(3,89,7,1,0,45);		
 		
 	}
