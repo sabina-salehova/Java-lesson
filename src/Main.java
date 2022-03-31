@@ -47,6 +47,16 @@ public class Main {
 		
 		System.out.println("\n--- LESSON 23 (miniProjectSayiBulma) ---");
 		miniProjectSayiBulma();
+		
+		System.out.println("\n--- LESSON 24 (findNumber) ---");
+		findNumber();
+		
+		System.out.println("\n--- LESSON 25 (findNumber) ---");
+		subtract(12,79);
+		
+		System.out.println("\n--- LESSON 26 (findNumber) ---");
+		variableArguments(3,89,7,1,0,45);		
+		
 	}
 	
 	public static void helloWorld() {
@@ -337,5 +347,42 @@ public class Main {
     	}
     	System.out.println("Sayı bulunamadı");
     }
+    
+    public static void findNumber()
+	{
+	   int[] numbers={3,9,5,7};
+	   int searchNumber=8;
+	   String result="-";
+	   for(int num:numbers)
+	   {
+	       if(searchNumber==num)
+	       {
+	           result="+";
+	           break;
+	       }
+	   }
+	   if(result=="+")
+	   System.out.println("found");
+	   else
+	   System.out.println("not found");
+	}
+    
+    public static int subtract(int number1, int number2)
+	{
+	  if(number1>number2)
+	  return number1-number2;
+	  return number2-number1;
+	}
+    
+    public static int variableArguments(int ... numbers)
+	{
+		int sum=0;
+		for(int number:numbers) 
+		{
+			sum+=number;
+		}
+		
+		return sum;
+	}
     
 }
